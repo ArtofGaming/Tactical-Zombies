@@ -26,7 +26,6 @@ public class CameraLook : MonoBehaviour
 
     public void Look(InputAction.CallbackContext value)
     {
-        Debug.Log("Looked");
         Vector2 lookVal = value.ReadValue<Vector2>();
         lookVal.y = invertY ? -lookVal.y : lookVal.y;
 
